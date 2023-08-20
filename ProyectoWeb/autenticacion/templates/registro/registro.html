@@ -1,0 +1,16 @@
+{% extends 'ProyectoWebApp/base.html' %}
+{% block title %} Registro {% endblock %}
+{% load static %}
+
+
+{% block content %}
+<form method="post" action="" style="color: azure;" >
+
+    {% csrf_token %}
+
+    {{form}}
+
+    <button type="submit" class="btn btn-success"> Registrate</button>
+</form>
+
+{% endblock %}
